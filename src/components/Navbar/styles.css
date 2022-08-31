@@ -1,0 +1,152 @@
+@keyframes navshine {
+  0% {
+    border-image: linear-gradient(
+      to right bottom,
+      #e91e63 2%,
+      #b72983 23%,
+      #673ab7 58%,
+      #ff5722 81%,
+      #ff9800 100%
+    );
+    border-image-slice: 1;
+  }
+  50% {
+    border-image: linear-gradient(
+      to right bottom,
+      #ff9800 2%,
+      #ff5722 23%,
+      #673ab7 58%,
+      #b72983 81%,
+      #e91e63 100%
+    );
+    border-image-slice: 1;
+  }
+  100% {
+    border-image: linear-gradient(
+      to right bottom,
+      #e91e63 2%,
+      #b72983 23%,
+      #673ab7 58%,
+      #ff5722 81%,
+      #ff9800 100%
+    );
+    border-image-slice: 1;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.navbar {
+  top: 0rem;
+  left: 0;
+  position: sticky;
+  border-width: 3px;
+  border-style: solid;
+  animation-name: navshine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  width: 5rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar.active {
+  width: 11rem;
+  animation-duration: 0.2s;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.navbar .logo-container .menu-btn {
+  width: 100%;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.navbar .logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.navbar .logo-container.active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.navbar .logo-container .logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+
+.navbar .logo-container .logo-text {
+  text-decoration: none;
+  color: white;
+  font-size: 1px;
+  visibility: hidden;
+}
+
+.navbar .logo-container .logo-text.active {
+  visibility: visible;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.navbar .menu {
+  padding: 1rem 0rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .menu .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 1.1rem 0rem;
+}
+
+.navbar .menu .item:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar .menu .item.active {
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1.71rem 0.3rem;
+}
+
+.navbar .menu .item .item-icon {
+  color: #e91e63;
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.navbar .menu .item:hover .item-icon {
+  color: #ff9800;
+  transform: scale(1.3);
+}
+
+.navbar .menu .item .item-text {
+  visibility: hidden;
+  color: white;
+}
+
+.navbar .menu .item .item-text.active {
+  visibility: visible;
+}

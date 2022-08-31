@@ -1,0 +1,250 @@
+@keyframes shine {
+  0% {
+    border-image: linear-gradient(
+      to right bottom,
+      #f44336 0%,
+      #e91e63 16%,
+      #ffc107 33%,
+      #ff9800 50%,
+      #8a4af3 66%,
+      #673ab7 83%,
+      #3f51b5 100%
+    );
+    border-image-slice: 1;
+  }
+  50% {
+    border-image: linear-gradient(
+      to right bottom,
+      #3f51b5 0%,
+      #673ab7 16%,
+      #8a4af3 33%,
+      #ff9800 50%,
+      #ffc107 66%,
+      #e91e63 83%,
+      #f44336 100%
+    );
+    border-image-slice: 1;
+  }
+  100% {
+    border-image: linear-gradient(
+      to right bottom,
+      #f44336 0%,
+      #e91e63 16%,
+      #ffc107 33%,
+      #ff9800 50%,
+      #8a4af3 66%,
+      #673ab7 83%,
+      #3f51b5 100%
+    );
+    border-image-slice: 1;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.home {
+  margin: 1rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.home .intro {
+  box-shadow: 1rem 3rem 1rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 96%;
+  border-width: 5px;
+  border-style: solid;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .intro .heading {
+  font-size: 1.9rem;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  padding-bottom: 1rem;
+  color: white;
+  text-align: center;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .intro .grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 3rem;
+  column-gap: 0rem;
+  padding: 1rem 0rem;
+}
+
+.home .intro .grid .item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: auto;
+  gap: 1rem;
+  width: 15rem;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  transition: 0.75s ease;
+}
+
+.home .intro .grid .item:hover {
+  box-shadow: 2rem 5rem 1rem rgba(15, 15, 15, 0.7);
+}
+
+.home .intro .grid .item h3 {
+  width: 12rem;
+  font-size: 1rem;
+  color: white;
+  padding: 0.3rem;
+}
+
+.home .intro .grid .item p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 1px 0px white;
+  letter-spacing: 1px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.home .crypto {
+  width: 99%;
+  box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
+  margin: 5rem 0rem;
+  border-width: 5px;
+  border-style: solid;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .crypto .crypto-intro {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home .crypto .crypto-intro h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .crypto .crypto-intro .Link {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.home .home-news {
+  width: 99%;
+  box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
+  margin: 3rem 0rem;
+  border-width: 5px;
+  border-style: solid;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .home-news .news-intro {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home .home-news .news-intro h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.home .home-news .news-intro .Link {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 900px) {
+  .home .intro .grid {
+    grid-template-columns: auto auto;
+  }
+
+  .home .intro .heading {
+    text-align: center;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 700px) {
+  .home .intro .grid {
+    grid-template-columns: auto;
+  }
+
+  .home .crypto .crypto-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .home .home-news .news-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 600px) {
+  .home .crypto .crypto-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .home .home-news .news-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

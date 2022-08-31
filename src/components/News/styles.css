@@ -1,0 +1,133 @@
+.news {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .select {
+  width: 16rem;
+}
+
+.news .select .box {
+  background-color: #fe0357;
+}
+
+.news .news-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.news .news-container .card {
+  padding: 2rem 0rem;
+  height: 10rem;
+  width: 95%;
+  transition: 0.75s ease;
+}
+
+.news .news-container .card:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.news .news-container .card a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.news .news-container .card a .img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.news .news-container .card a .img-container img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.news .news-container .card a .img-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.news .news-container .card a p {
+  padding: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
+.news .news-container .card a .provider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news .news-container .card a .provider .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.news .news-container .card a .provider .info img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 900px) {
+  .news .news-container .card a .img-container img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .news .news-container .card a .img-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .news .news-container .card a p {
+    font-size: 1rem;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 600px) {
+  .news .news-container .card a .img-container img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .news .news-container .card a .img-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .news .news-container .card a p {
+    font-size: 0.8rem;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 500px) {
+  .news .news-container .card a .img-container img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .news .news-container .card a .img-container h2 {
+    font-size: 1rem;
+  }
+
+  .news .news-container .card a p {
+    font-size: 0.8rem;
+  }
+}
