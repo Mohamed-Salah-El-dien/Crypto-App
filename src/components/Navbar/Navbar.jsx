@@ -7,7 +7,7 @@ import CurrencyBitcoinOutlinedIcon from '@mui/icons-material/CurrencyBitcoinOutl
 import NewspaperOutlinedIcon from '@mui/icons-material/NewspaperOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
-import icon from '../../images/cryptocurrency.png';
+import icon from '../../images/cryptocurrency3.png';
 
 import './styles.css';
 

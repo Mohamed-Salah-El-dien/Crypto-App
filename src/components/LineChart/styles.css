@@ -39,6 +39,7 @@
   padding: 1rem;
   width: 96%;
   border-width: 5px;
+  backdrop-filter: blur(8px);
   border-style: solid;
   animation-name: shine;
   animation-iteration-count: infinite;

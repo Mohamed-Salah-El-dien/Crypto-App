@@ -63,6 +63,7 @@
   width: 96%;
   border-width: 5px;
   border-style: solid;
+  backdrop-filter: blur(6px);
   animation-name: shine;
   animation-iteration-count: infinite;
   animation-duration: 1s;
@@ -91,7 +92,7 @@
 .home .intro .grid .item {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
   padding: 1rem;
   margin: auto;
@@ -130,6 +131,7 @@
   box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
   margin: 5rem 0rem;
   border-width: 5px;
+  backdrop-filter: blur(6px);
   border-style: solid;
   animation-name: shine;
   animation-iteration-count: infinite;
@@ -167,6 +169,7 @@
   box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.5);
   margin: 3rem 0rem;
   border-width: 5px;
+  backdrop-filter: blur(6px);
   border-style: solid;
   animation-name: shine;
   animation-iteration-count: infinite;

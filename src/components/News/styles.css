@@ -22,11 +22,12 @@
   padding: 2rem 0rem;
   height: 10rem;
   width: 95%;
+
   transition: 0.75s ease;
 }
 
 .news .news-container .card:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .news .news-container .card a {
@@ -78,6 +79,13 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+}
+
+.news .news-container .card a .provider .info .name,
+.news .news-container .card a .provider p {
+  color: #e91e63;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */

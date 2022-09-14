@@ -25,9 +25,10 @@
   height: 15rem;
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(2px);
   align-items: center;
   box-shadow: 1rem 3rem 1rem rgba(15, 15, 15, 0.5);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   transition: 0.75s ease;
 }
@@ -83,7 +84,7 @@
 }
 
 .container .grid .link .card .content p:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
